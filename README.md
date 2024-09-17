@@ -25,6 +25,20 @@ Node.js is a runtime that enables JavaScript to run on the server-side. It is ev
 ## Express.js Overview
 
 Express.js is a fast, minimalist framework for building web applications on Node.js. It simplifies the process of building server-side applications by offering a range of built-in middleware and HTTP utility methods.
+### Key Express.js Concepts
+
+- **Routing**: Express makes routing easier. For example:
+  ```javascript
+  const express = require('express');
+  const app = express();
+
+  app.get('/', (req, res) => {
+    res.send('Hello World');
+  });
+
+  app.listen(3000, () => {
+    console.log('Server is running on port 3000');
+  });
 
 
 
